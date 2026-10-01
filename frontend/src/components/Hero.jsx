@@ -3,8 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import { WhatsAppIcon, WHATSAPP_LINK, getMuseumStatus } from "./shared";
 
-const HERO_IMG =
-  "https://images.unsplash.com/photo-1597361304971-f9cfd6e154c7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzN8MHwxfHNlYXJjaHwxfHxnbGFzc2Jsb3dpbmclMjBtb2x0ZW4lMjBnbGFzcyUyMGZ1cm5hY2UlMjBhcnRpc2FufGVufDB8fHx8MTc5MDg3MTc4MXww&ixlib=rb-4.1.0&q=85";
+const HERO_IMG = "/images/hero-soprador.jpg";
 
 const LINES = [
   { text: "Onde a areia e o fogo", italic: false },

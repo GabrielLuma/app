@@ -1,5 +1,6 @@
 import { Flame, CalendarClock } from "lucide-react";
 import { Reveal, Eyebrow, WhatsAppIcon, WHATSAPP_AGENDAMENTO_LINK } from "./shared";
+import { ProductionTimer } from "./ProductionTimer";
 
 const SHOTS = [
   {
@@ -68,6 +69,9 @@ export const Espetaculo = () => (
           </div>
         </Reveal>
         <Reveal delay={0.4}>
+          <ProductionTimer />
+        </Reveal>
+        <Reveal delay={0.5}>
           <a
             href={WHATSAPP_AGENDAMENTO_LINK}
             target="_blank"
