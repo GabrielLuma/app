@@ -38,7 +38,7 @@ export const Navbar = () => {
           <img
             src="/images/logo-glaspark.png"
             alt="Glas Park — Museu do Cristal"
-            className="h-14 w-auto transition-transform duration-500 group-hover:scale-105"
+            className="h-16 w-auto transition-transform duration-500 group-hover:scale-105 [filter:drop-shadow(0_0_14px_rgba(226,135,67,0.45))]"
           />
         </a>
 
