@@ -28,8 +28,8 @@ export const Navbar = () => {
       transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
       className={`fixed top-0 inset-x-0 z-50 transition-[background-color,border-color,backdrop-filter] duration-500 ${
         scrolled
-          ? "backdrop-blur-xl bg-black/60 border-b border-amber-500/15"
-          : "bg-transparent border-b border-transparent"
+          ? "backdrop-blur-2xl bg-[#1E1E28]/80 border-b border-amber-500/20"
+          : "backdrop-blur-md bg-white/[0.04] border-b border-white/5"
       }`}
       data-testid="main-navbar"
     >

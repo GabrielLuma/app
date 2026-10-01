@@ -42,6 +42,20 @@ export const Hero = () => {
         style={{ opacity: fade }}
         className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 pb-24 pt-44 w-full"
       >
+        <motion.div
+          initial={{ opacity: 0, y: -24, filter: "blur(10px)" }}
+          animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+          transition={{ duration: 1.2, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
+          className="flex justify-center mb-10"
+        >
+          <img
+            src="/images/logo-glaspark.png"
+            alt="Glas Park — Museu do Cristal"
+            className="h-28 sm:h-36 lg:h-44 w-auto [filter:drop-shadow(0_0_28px_rgba(255,255,255,0.28))]"
+            data-testid="hero-logo"
+          />
+        </motion.div>
+
         <h1
           className="mt-8 font-serif font-light text-stone-100 leading-[0.98] tracking-tight text-5xl sm:text-6xl lg:text-8xl"
           data-testid="hero-title"
