@@ -8,7 +8,7 @@ const HERO_IMG = "/images/hero-fogo.jpg";
 const LINES = [
   { text: "Onde a areia e o fogo", italic: false },
   { text: "se transformam em", italic: true },
-  { text: "obra de arte.", italic: false },
+  { text: "obra de artes.", italic: false },
 ];
 
 export const Hero = () => {
@@ -72,9 +72,9 @@ export const Hero = () => {
           transition={{ delay: 1, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
           className="mt-8 max-w-xl text-base sm:text-lg text-stone-300 leading-relaxed"
         >
-          Visite a fábrica e deixe-se maravilhar pela habilidade e criatividade
-          dos mestres vidreiros, que aliam técnicas centenárias ao conceito de
-          inovação. Um passeio agradável e enriquecedor para toda a família.
+          Venha conhecer o Glas Park, a loja de fábrica da Cristais Di Murano.
+          Visite também o nosso Museu do Cristal, onde você pode conhecer a
+          arte do cristal, sua história e toda a sua beleza.
         </motion.p>
         <motion.p
           initial={{ opacity: 0, y: 24 }}
@@ -82,9 +82,8 @@ export const Hero = () => {
           transition={{ delay: 1.1, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
           className="mt-4 max-w-xl text-sm text-stone-400 leading-relaxed"
         >
-          Desde 1995, o Glas Park é um espaço criativo em Blumenau onde você
-          conhece a arte, a história e a beleza do cristal — com produção ao
-          vivo dos mestres vidreiros e entrada gratuita.
+          Desde 1995 em Blumenau — produção ao vivo dos mestres vidreiros e
+          entrada gratuita.
         </motion.p>
 
         <motion.div
