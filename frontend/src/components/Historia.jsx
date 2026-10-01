@@ -38,14 +38,8 @@ export const Historia = () => (
             </h2>
           </Reveal>
           <Reveal delay={0.2}>
-            <p className="mt-8 text-stone-300 leading-relaxed text-base sm:text-lg">
-              Fundado em 1995, o Glas Park é um espaço criativo onde você
-              conhece o cristal, sua arte, sua história e sua beleza.
-            </p>
-          </Reveal>
-          <Reveal delay={0.3}>
-            <p className="mt-5 text-stone-400 leading-relaxed">
-              Visitando a fábrica, deixe-se maravilhar pela habilidade e
+            <p className="mt-8 text-stone-200 leading-relaxed text-lg sm:text-xl font-light">
+              Visitando o museu, deixe-se maravilhar pela habilidade e
               criatividade dos mestres vidreiros, que aliam técnicas centenárias
               ao conceito de inovação. Um passeio agradável e enriquecedor para
               toda a família.
