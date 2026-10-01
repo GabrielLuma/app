@@ -61,7 +61,7 @@ export const Navbar = () => {
             className="flex items-center gap-2 rounded-full bg-amber-500 hover:bg-amber-400 text-[#0B0B0E] text-sm font-semibold px-5 py-2.5 transition-colors duration-300"
           >
             <WhatsAppIcon className="w-4 h-4" />
-            Agendar visita
+            Fale conosco
           </a>
         </nav>
 
@@ -105,7 +105,7 @@ export const Navbar = () => {
                 className="flex items-center justify-center gap-2 rounded-full bg-amber-500 text-[#0B0B0E] font-semibold px-5 py-3 mt-2"
               >
                 <WhatsAppIcon className="w-4 h-4" />
-                Agendar visita
+                Fale conosco
               </a>
             </div>
           </motion.nav>
