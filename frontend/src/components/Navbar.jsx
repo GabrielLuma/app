@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import { Logo, WhatsAppIcon, WHATSAPP_LINK } from "./shared";
+import { WhatsAppIcon, WHATSAPP_LINK } from "./shared";
 
 const LINKS = [
   { href: "#historia", label: "História" },
@@ -34,16 +34,12 @@ export const Navbar = () => {
       data-testid="main-navbar"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
-        <a href="#topo" className="flex items-center gap-3 group" data-testid="navbar-logo-link">
-          <Logo className="w-9 h-9 transition-transform duration-500 group-hover:rotate-6" />
-          <div className="leading-tight">
-            <span className="block font-serif text-lg text-stone-100 tracking-[0.12em] uppercase">
-              Glas Park
-            </span>
-            <span className="block text-[10px] font-mono uppercase tracking-[0.3em] text-amber-500/80">
-              Museu do Cristal · Blumenau
-            </span>
-          </div>
+        <a href="#topo" className="flex items-center group" data-testid="navbar-logo-link">
+          <img
+            src="/images/logo-glaspark.png"
+            alt="Glas Park — Museu do Cristal"
+            className="h-11 w-auto transition-transform duration-500 group-hover:scale-105"
+          />
         </a>
 
         <nav className="hidden md:flex items-center gap-8" data-testid="navbar-links">

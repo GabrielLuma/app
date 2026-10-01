@@ -1,4 +1,4 @@
-import { Logo, WhatsAppIcon, WHATSAPP_LINK, MAPS_LINK } from "./shared";
+import { WhatsAppIcon, WHATSAPP_LINK, MAPS_LINK } from "./shared";
 
 export const Footer = () => (
   <footer className="relative border-t border-amber-500/15 bg-[#0B0B0E]" data-testid="site-footer">
@@ -6,14 +6,12 @@ export const Footer = () => (
     <div className="max-w-7xl mx-auto px-6 lg:px-10 py-16">
       <div className="grid md:grid-cols-3 gap-12">
         <div>
-          <div className="flex items-center gap-3">
-            <Logo className="w-10 h-10" />
-            <div className="leading-tight">
-              <span className="block font-serif text-xl text-stone-100 tracking-[0.12em] uppercase">Glas Park</span>
-              <span className="block text-[10px] font-mono uppercase tracking-[0.3em] text-amber-500/80">
-                Museu do Cristal · Blumenau
-              </span>
-            </div>
+          <div className="flex items-center">
+            <img
+              src="/images/logo-glaspark.png"
+              alt="Glas Park — Museu do Cristal"
+              className="h-14 w-auto"
+            />
           </div>
           <p className="mt-6 text-sm text-stone-400 leading-relaxed max-w-xs">
             Desde 1995, um espaço criativo dedicado à arte, à história e à beleza

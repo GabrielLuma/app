@@ -3,7 +3,6 @@ import { openLightbox } from "./Lightbox";
 
 const STATS = [
   { value: "1995", label: "Ano de fundação" },
-  { value: "2.000+", label: "Anos de história do vidro" },
   { value: "100%", label: "Entrada gratuita" },
 ];
 
@@ -46,8 +45,7 @@ export const Historia = () => (
           <Reveal delay={0.2}>
             <p className="mt-8 text-stone-300 leading-relaxed text-base sm:text-lg">
               Fundado em 1995, o Glas Park é um espaço criativo onde você
-              conhece o cristal, sua arte, sua história e sua beleza. Um material
-              fascinante que o homem manipula há mais de 2.000 anos.
+              conhece o cristal, sua arte, sua história e sua beleza.
             </p>
           </Reveal>
           <Reveal delay={0.3}>
@@ -59,7 +57,7 @@ export const Historia = () => (
             </p>
           </Reveal>
 
-          <div className="mt-12 grid grid-cols-3 gap-6">
+          <div className="mt-12 grid grid-cols-2 gap-6">
             {STATS.map((s, i) => (
               <Reveal key={s.label} delay={0.35 + i * 0.1}>
                 <div data-testid={`historia-stat-${i}`}>

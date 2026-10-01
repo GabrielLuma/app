@@ -72,6 +72,16 @@ export const Hero = () => {
           transition={{ delay: 1, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
           className="mt-8 max-w-xl text-base sm:text-lg text-stone-300 leading-relaxed"
         >
+          Visite a fábrica e deixe-se maravilhar pela habilidade e criatividade
+          dos mestres vidreiros, que aliam técnicas centenárias ao conceito de
+          inovação. Um passeio agradável e enriquecedor para toda a família.
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.1, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+          className="mt-4 max-w-xl text-sm text-stone-400 leading-relaxed"
+        >
           Desde 1995, o Glas Park é um espaço criativo em Blumenau onde você
           conhece a arte, a história e a beleza do cristal — com produção ao
           vivo dos mestres vidreiros e entrada gratuita.
