@@ -25,12 +25,20 @@ export const Footer = () => (
           <h4 className="text-xs font-mono uppercase tracking-[0.25em] text-amber-500/90">
             Visitação
           </h4>
-          <ul className="mt-5 space-y-3 text-sm text-stone-400">
+          <p className="mt-5 text-[10px] font-mono uppercase tracking-[0.25em] text-stone-500">
+            Museu e Loja
+          </p>
+          <ul className="mt-2.5 space-y-2 text-sm text-stone-400">
             <li>Seg a Sex · 9h às 18h</li>
             <li>Sábado · 9h às 13h</li>
-            <li>Produção ao vivo · Seg a Sex, 9h às 13h30</li>
-            <li className="text-amber-300/90">Entrada gratuita</li>
           </ul>
+          <p className="mt-5 text-[10px] font-mono uppercase tracking-[0.25em] text-stone-500">
+            Fabricação ao vivo
+          </p>
+          <ul className="mt-2.5 space-y-2 text-sm text-stone-400">
+            <li>Seg a Sex · 9h às 13h30</li>
+          </ul>
+          <p className="mt-5 text-sm text-amber-300/90">Entrada gratuita</p>
         </div>
 
         <div>
