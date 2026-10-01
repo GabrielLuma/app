@@ -1,0 +1,116 @@
+{
+  "project_name": "Museu do Cristal de Blumenau - Dark Editorial Landing Page",
+  "archetype": "ARCHETYPE 5: LUXURY & ARTISAN CRAFTSMANSHIP (Obsidian & Molten Amber)",
+  "language": "pt-BR",
+  "theme": "dark",
+  "typography": {
+    "display_font": "Cormorant Garamond, Playfair Display, serif",
+    "body_font": "Plus Jakarta Sans, DM Sans, sans-serif",
+    "mono_font": "JetBrains Mono, monospace",
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tight font-serif font-light text-stone-100 leading-tight",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl font-serif font-light text-amber-100/90 tracking-tight",
+      "h3": "text-xl sm:text-2xl font-serif text-amber-200/90",
+      "body": "text-base text-stone-300 font-sans leading-relaxed",
+      "eyebrow": "text-xs uppercase tracking-[0.25em] font-mono text-amber-500/90 font-medium"
+    }
+  },
+  "colors": {
+    "background": "#0B0B0E",
+    "background_alt": "#121218",
+    "surface": "#16161E",
+    "border_subtle": "rgba(212, 175, 55, 0.15)",
+    "border_active": "rgba(226, 135, 67, 0.4)",
+    "text_primary": "#F4F4F6",
+    "text_muted": "#A1A1AA",
+    "amber_gold": "#D4AF37",
+    "molten_amber": "#E28743",
+    "furnace_fire": "#FF5500",
+    "glass_overlay": "rgba(11, 11, 14, 0.75)"
+  },
+  "visual_enhancers": {
+    "noise_texture": "subtle grainy overlay background for editorial warmth",
+    "glassmorphism": "backdrop-blur-xl bg-black/60 border border-amber-500/20 shadow-[0_8px_32px_rgba(0,0,0,0.5)]",
+    "furnace_glow": "radial-gradient(circle at center, rgba(226, 135, 67, 0.15) 0%, transparent 70%)",
+    "border_shimmer": "linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.3), transparent)"
+  },
+  "key_business_info": {
+    "founded_year": 1995,
+    "whatsapp": "+55 47 99205-6444",
+    "whatsapp_link": "https://wa.me/5547992056444?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20Museu%20do%20Cristal%20e%20agendamento.",
+    "address": "Rua Rudolf Roedel, 233 - Salto Weissbach, Blumenau - SC, 89032-080",
+    "admission": "ENTRADA GRATUITA",
+    "general_hours": "Segunda a Sexta: 9h às 18h | Sábado: 9h às 13h",
+    "live_production_hours": "Segunda a Sexta: 9h às 13h | Sábado: Sob agendamento prévio"
+  },
+  "image_urls": {
+    "hero_background": {
+      "url": "https://images.unsplash.com/photo-1597361304971-f9cfd6e154c7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzN8MHwxfHNlYXJjaHwxfHxnbGFzc2Jsb3dpbmclMjBtb2x0ZW4lMjBnbGFzcyUyMGZ1cm5hY2UlMjBhcnRpc2FufGVufDB8fHx8MTc9MDg3MTc4MXww&ixlib=rb-4.1.0&q=85",
+      "description": "Chama incandescente e vidro fundido sendo moldado em temperatura extrema na fábrica de cristal",
+      "usage": "Hero section background with dark gradient overlay (from-black/80 via-black/50 to-black)"
+    },
+    "live_production": [
+      {
+        "url": "https://images.unsplash.com/photo-1630691625890-6cf7c4f30c04?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzN8MHwxfHNlYXJjaHwzfHxnbGFzc2Jsb3dpbmclMjBtb2x0ZW4lMjBnbGFzcyUyMGZ1cm5hY2UlMjBhcnRpc2FufGVufDB8fHx8MTc9MDg3MTc4MXww&ixlib=rb-4.1.0&q=85",
+        "title": "A Fornalha Sagrada",
+        "description": "Mestre vidreiro trabalhando ao vivo junto ao forno de fusão em alta temperatura"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1671214448723-5ffd8157be62?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzN8MHwxfHNlYXJjaHw0fHxnbGFzc2Jsb3dpbmclMjBtb2x0ZW4lMjBnbGFzcyUyMGZ1cm5hY2UlMjBhcnRpc2FufGVufDB8fHx8MTc9MDg3MTc4MXww&ixlib=rb-4.1.0&q=85",
+        "title": "Sopro & Movimento",
+        "description": "Modelagem artesanal minuciosa da peça incandescente com fogo e ferramentas centenárias"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1506902039157-1a7e7374b077?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzN8MHwxfHNlYXJjaHwyfHxnbGFzc2Jsb3dpbmclMjBtb2x0ZW4lMjBnbGFzcyUyMGZ1cm5hY2UlMjBhcnRpc2FufGVufDB8fHx8MTc9MDg3MTc4MXww&ixlib=rb-4.1.0&q=85",
+        "title": "Lapidação Térmica",
+        "description": "Ajuste fino de temperatura e chama direta para acabamento reluzente do cristal"
+      }
+    ],
+    "museum_history": [
+      {
+        "url": "https://images.unsplash.com/photo-1776663772031-bc08915613d7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHxjb2xvcmZ1bCUyMGdsYXNzJTIwc2N1bHB0dXJlJTIwYXJ0JTIwZGFya3xlbnwwfHx8fDE3OTA4NzE3OTJ8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Escultura abstrata iridescente retratando 2000 anos da história fascinante do vidro"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1637324110774-cebee794246c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHw0fHxjb2xvcmZ1bCUyMGdsYXNzJTIwc2N1bHB0dXJlJTIwYXJ0JTIwZGFya3xlbnwwfHx8fDE3OTA4NzE3OTJ8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Escultura fluida de vidro âmbar em fundo escuro, simbolizando a tradição Murano"
+      }
+    ],
+    "store_and_gallery": [
+      {
+        "url": "https://images.unsplash.com/photo-1779636231616-4de77a181100?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHxjcnlzdGFsJTIwZ29ibGV0cyUyMHdpbmUlMjBnbGFzcyUyMGx1eHVyeSUyMGFtYmVyJTIwZGFya3xlbnwwfHx8fDE3OTA4NzE3ODh8MA&ixlib=rb-4.1.0&q=85",
+        "title": "Taças Lapidadas de Cristal Murano",
+        "category": "Taças",
+        "description": "Conjunto nobre com refração de luz dourada e lapidação artesanal singular"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1779636231655-aeb3cb95d44e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwyfHxjcnlzdGFsJTIwZ29ibGV0cyUyMHdpbmUlMjBnbGFzcyUyMGx1eHVyeSUyMGFtYmVyJTIwZGFya3xlbnwwfHx8fDE3OTA4NzE3ODh8MA&ixlib=rb-4.1.0&q=85",
+        "title": "Copos Ornamentais Executivos",
+        "category": "Copos",
+        "description": "Cristal de altíssima transparência lapidado a mão para apreciadores de peças exclusivas"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1783628642381-4d3a2a5839d2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHozfHxjcnlzdGFsJTIwZ29ibGV0cyUyMHdpbmUlMjBnbGFzcyUyMGx1eHVyeSUyMGFtYmVyJTIwZGFya3xlbnwwfHx8fDE3OTA4NzE3ODh8MA&ixlib=rb-4.1.0&q=85",
+        "title": "Vasos & Peças Decorativas Murano",
+        "category": "Decoração",
+        "description": "Variedade exuberante de cores e nuances dos consagradas Cristais di Murano"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Ensure total responsiveness with mobile-first approach and fluid typography",
+    "Use Portuguese (pt-BR) text strictly throughout the interface",
+    "Add 'data-testid' to every interactive button, card, schedule tab, and CTA for clean automated testing",
+    "Build a live status badge indicator showing if live production is happening right now (9h-13h seg-sex)",
+    "Implement interactive modal/drawer for WhatsApp appointment scheduling for Saturday live show",
+    "Create interactive Store/Gallery showcase with tabs for 'Todas as Peças', 'Taças', 'Copos', 'Decorativos Murano'",
+    "Add dynamic Google Maps direction launcher and interactive address card for Blumenau location",
+    "Use Framer Motion or smooth scroll effects to provide an award-worthy editorial museum experience"
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": {
+    "anti_slop": "Avoid standard bright templates. Use dark obsidian surfaces with glowing molten amber gradients and fine gold borders.",
+    "spacing": "Maintain generous 2-3x padding in cards and sections to create dramatic museum atmosphere.",
+    "contrast": "Ensure text contrast meets APCA standard against dark obsidian background (#0B0B0E).",
+    "testing_attribute": "Include data-testid on all interactive controls (e.g., data-testid='whatsapp-cta-button', data-testid='schedule-live-show-btn')."
+  }
+}
