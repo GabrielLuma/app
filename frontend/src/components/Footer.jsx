@@ -10,7 +10,7 @@ export const Footer = () => (
             <img
               src="/images/logo-glaspark.png"
               alt="Glas Park — Museu do Cristal"
-              className="h-24 w-auto [filter:drop-shadow(0_0_18px_rgba(226,135,67,0.4))]"
+              className="h-28 w-auto [filter:drop-shadow(0_0_18px_rgba(255,255,255,0.25))]"
             />
           </div>
           <p className="mt-6 text-sm text-stone-400 leading-relaxed max-w-xs">
