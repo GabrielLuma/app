@@ -44,6 +44,7 @@ Site institucional para divulgar um museu de cristal em Blumenau (SC). Atendimen
 - Seção Produção ao Vivo agora usa 3 fotos reais (prod-1 fornos, prod-2 sopro, hero-soprador) com bordas brancas removidas
 - Acervo: fotos restauradas aos originais com fundo branco (sem edição)
 - Loja: fotos originais sem processamento; removida a foto da mesa dourada (repetida com a foto ampla do salão) — 7 fotos
+- Acervo: primeiro card trocado pela foto do japamala de cristal pintado (D Murano-9057.jpg → /images/acervo-japamala.jpg, object-contain); foto das taças a ouro permanece na coluna direita da História (2026-10-01)
 
 ## Backlog
 - P0: nenhum pendente

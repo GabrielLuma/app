@@ -8,10 +8,11 @@ const STATS = [
 
 const ACERVO = [
   {
-    src: "/images/acervo-tacas-ouro.jpg",
-    alt: "Taças de cristal ornamentadas com aplicações em ouro",
-    title: "Taças Ornamentadas a Ouro",
-    desc: "Cristal rubi com medalhões e folhagens em ouro",
+    src: "/images/acervo-japamala.jpg",
+    alt: "Japamala de contas de cristal pintadas à mão com apliques dourados",
+    title: "Japamala de Cristal Pintado",
+    desc: "Contas de cristal pintadas à mão, uma a uma, com apliques em ouro",
+    fit: "contain",
   },
   {
     src: "/images/acervo-canecas-lagarto.jpg",
@@ -128,7 +129,9 @@ export const Historia = () => (
                     src={p.src}
                     alt={p.alt}
                     loading="lazy"
-                    className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
+                    className={`w-full aspect-[4/3] transition-transform duration-700 group-hover:scale-105 ${
+                      p.fit === "contain" ? "object-contain bg-white" : "object-cover"
+                    }`}
                   />
                 </div>
                 <figcaption className="p-6">
