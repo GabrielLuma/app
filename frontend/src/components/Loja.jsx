@@ -47,9 +47,9 @@ export const Loja = () => (
         </Reveal>
       </div>
 
-      <div className="mt-14 columns-2 md:columns-3 lg:columns-4 gap-5" data-testid="loja-gallery">
+      <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-5" data-testid="loja-gallery">
         {PHOTOS.map((p, i) => (
-          <Reveal key={p.src} delay={0.05 + (i % 4) * 0.08} className="break-inside-avoid mb-5">
+          <Reveal key={p.src} delay={0.05 + (i % 3) * 0.08}>
             <figure
               className="group overflow-hidden rounded-2xl border border-amber-500/15 hover:border-amber-500/40 transition-colors duration-500"
               data-testid={`loja-photo-${i}`}
@@ -59,7 +59,7 @@ export const Loja = () => (
                 alt={p.alt}
                 loading="lazy"
                 onClick={() => openLightbox(p.src, p.alt)}
-                className="w-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-105"
+                className="w-full aspect-[4/3] object-cover object-center cursor-zoom-in transition-transform duration-700 group-hover:scale-105"
               />
             </figure>
           </Reveal>
