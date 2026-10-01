@@ -47,6 +47,7 @@ Site institucional para divulgar um museu de cristal em Blumenau (SC). Atendimen
 - Acervo: primeiro card trocado pela foto do japamala de cristal pintado (D Murano-9057.jpg → /images/acervo-japamala.jpg, object-contain); foto das taças a ouro permanece na coluna direita da História (2026-10-01)
 - Tentativas desfeitas a pedido do usuário: troca de posição japamala/corredor e troca do corredor pelo livro "L'Arte Vetraria" — coluna da História segue com a foto do corredor (2026-10-01)
 - História: a segunda foto da coluna (taças a ouro) foi substituída pela foto do livro "L'Arte Vetraria" (1668) — coluna final: corredor do museu + livro antigo (2026-10-01)
+- Acervo: card "Canecas com Tampa de Estanho" substituído pela nova foto das taças ornamentadas a ouro (D Murano-9021 novo) — cards finais: Japamala, Canecas com Lagartos, Taças Ornamentadas a Ouro (2026-10-01)
 
 ## Backlog
 - P0: nenhum pendente

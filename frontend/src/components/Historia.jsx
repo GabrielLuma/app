@@ -21,10 +21,10 @@ const ACERVO = [
     desc: "Aplicações modeladas à mão, esmaltadas e douradas",
   },
   {
-    src: "/images/acervo-canecas-estanho.jpg",
-    alt: "Canecas de cristal gravadas com tampas de estanho",
-    title: "Canecas com Tampa de Estanho",
-    desc: "Gravação heráldica e ferragens em estanho maciço",
+    src: "/images/acervo-tacas-ouro.jpg",
+    alt: "Taças de cristal rubi ornamentadas com cenas douradas",
+    title: "Taças Ornamentadas a Ouro",
+    desc: "Cristal rubi com medalhões e folhagens em ouro",
   },
 ];
 
