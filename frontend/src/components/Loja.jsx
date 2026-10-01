@@ -21,7 +21,7 @@ export const Loja = () => (
           </Reveal>
           <Reveal delay={0.1}>
             <h2 className="mt-5 font-serif font-light text-3xl sm:text-4xl lg:text-5xl text-stone-100 tracking-tight leading-tight">
-              Leve um pedaço da <span className="italic text-amber-400">arte</span> para casa
+              Leve a <span className="italic text-amber-400">arte</span> com você
             </h2>
           </Reveal>
           <Reveal delay={0.2}>

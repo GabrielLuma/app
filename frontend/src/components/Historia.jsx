@@ -11,8 +11,8 @@ const ACERVO = [
   {
     src: "/images/acervo-japamala.jpg",
     alt: "Japamala de contas de cristal pintadas à mão com apliques dourados",
-    title: "Japamala de Cristal Pintado",
-    desc: "Contas de cristal pintadas à mão, uma a uma, com apliques em ouro",
+    title: "Colar da Sorte · China",
+    desc: "As bolas são pintadas através das aberturas",
     fit: "contain",
   },
   {
@@ -132,12 +132,12 @@ export const Historia = () => (
 
         <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {ACERVO.map((p, i) => (
-            <Reveal key={p.title} delay={0.1 + i * 0.12}>
+            <Reveal key={p.title} delay={0.1 + i * 0.12} className="h-full">
               <figure
-                className="group rounded-2xl overflow-hidden border border-amber-500/15 bg-[#16161E] hover:border-amber-500/40 transition-colors duration-500"
+                className="group h-full flex flex-col rounded-2xl overflow-hidden border border-amber-500/15 bg-[#16161E] hover:border-amber-500/40 transition-colors duration-500"
                 data-testid={`acervo-card-${i}`}
               >
-                <div className="overflow-hidden">
+                <div className="overflow-hidden shrink-0">
                   <img
                     src={p.src}
                     alt={p.alt}
@@ -148,8 +148,8 @@ export const Historia = () => (
                     }`}
                   />
                 </div>
-                <figcaption className="p-6">
-                  <p className="font-serif text-xl text-stone-100">{p.title}</p>
+                <figcaption className="p-6 flex-1 flex flex-col">
+                  <p className="font-serif text-xl text-stone-100 min-h-[3.5rem]">{p.title}</p>
                   <p className="mt-1.5 text-sm text-stone-400">{p.desc}</p>
                 </figcaption>
               </figure>

@@ -6,7 +6,6 @@ const SHOTS = [
   {
     src: "/images/producao/prod-1.jpg",
     alt: "Fornos da fábrica com fileiras de peças de cristal em produção",
-    wide: true,
   },
   {
     src: "/images/producao/prod-2.jpg",
@@ -84,9 +83,9 @@ export const Espetaculo = () => (
 
       <div className="mt-16 lg:mt-20 grid sm:grid-cols-2 lg:grid-cols-3 gap-5" data-testid="producao-gallery">
         {SHOTS.map((shot, i) => (
-          <Reveal key={shot.src} delay={0.08 + i * 0.08} className={shot.wide ? "sm:col-span-2" : ""}>
+          <Reveal key={shot.src} delay={0.08 + i * 0.08}>
             <figure
-              className="group relative overflow-hidden rounded-2xl border border-amber-500/20 h-full"
+              className="group relative overflow-hidden rounded-2xl border border-amber-500/20"
               data-testid={`producao-shot-${i}`}
             >
               <img
@@ -94,9 +93,7 @@ export const Espetaculo = () => (
                 alt={shot.alt}
                 loading="lazy"
                 onClick={() => openLightbox(shot.src, shot.alt)}
-                className={`w-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-105 ${
-                  shot.wide ? "aspect-[2/1] sm:aspect-auto sm:h-full" : "aspect-[4/3]"
-                }`}
+                className="w-full aspect-[4/3] object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-105"
               />
             </figure>
           </Reveal>

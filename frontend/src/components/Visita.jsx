@@ -95,14 +95,23 @@ export const Visita = () => (
               <MapPin className="w-5 h-5 text-amber-500" />
               <h3 className="font-serif text-2xl text-stone-100">Onde estamos</h3>
             </div>
-            <p className="mt-7 text-stone-300 leading-relaxed">
+            <p className="mt-6 text-stone-300 leading-relaxed">
               Rua Rudolf Roedel, 233
               <br />
               Salto Weissbach · Blumenau — SC
               <br />
               CEP 89032-080
             </p>
-            <div className="mt-auto pt-8 flex flex-col gap-3">
+            <div className="mt-6 overflow-hidden rounded-xl border border-amber-500/25 shadow-[0_10px_40px_rgba(0,0,0,0.45)]">
+              <iframe
+                title="Mapa do Glas Park — Museu do Cristal"
+                src="https://www.google.com/maps?q=Rua%20Rudolf%20Roedel%20233%2C%20Salto%20Weissbach%2C%20Blumenau%20-%20SC&output=embed"
+                className="w-full aspect-[16/10] block [filter:invert(0.9)_hue-rotate(185deg)_saturate(0.65)_brightness(0.95)]"
+                loading="lazy"
+                data-testid="visita-map-embed"
+              />
+            </div>
+            <div className="mt-auto pt-6 flex flex-col gap-3">
               <a
                 href={MAPS_LINK}
                 target="_blank"
