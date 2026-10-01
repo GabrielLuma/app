@@ -1,4 +1,4 @@
-import { Clock, MapPin, Ticket, ExternalLink, Flame } from "lucide-react";
+import { Clock, MapPin, Ticket, ExternalLink } from "lucide-react";
 import { Reveal, Eyebrow, WhatsAppIcon, WHATSAPP_LINK, MAPS_LINK } from "./shared";
 
 const HOURS = [
@@ -70,7 +70,6 @@ export const Visita = () => (
                 data-testid="visita-production-highlight"
               >
                 <div className="flex items-center gap-2.5">
-                  <Flame className="w-5 h-5 text-amber-400" />
                   <p className="text-xs font-mono uppercase tracking-[0.22em] text-amber-400">
                     Produção ao vivo · Fábrica
                   </p>
