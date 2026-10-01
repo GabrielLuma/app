@@ -43,7 +43,7 @@ export const Historia = () => (
           </Reveal>
           <Reveal delay={0.2}>
             <p className="mt-8 text-stone-300 leading-relaxed text-base sm:text-lg">
-              Fundado em 1995, o Museu do Cristal é um espaço criativo onde você
+              Fundado em 1995, o Glas Park é um espaço criativo onde você
               conhece o cristal, sua arte, sua história e sua beleza. Um material
               fascinante que o homem manipula há mais de 2.000 anos.
             </p>

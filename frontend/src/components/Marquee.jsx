@@ -2,7 +2,7 @@ const ITEMS = [
   "Entrada Gratuita",
   "Desde 1995",
   "Cristais di Murano",
-  "Espetáculo ao Vivo",
+  "Produção ao Vivo",
   "Técnicas Centenárias",
   "Arte em Vidro Soprado",
 ];

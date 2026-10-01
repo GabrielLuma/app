@@ -5,7 +5,7 @@ import { Logo, WhatsAppIcon, WHATSAPP_LINK } from "./shared";
 
 const LINKS = [
   { href: "#historia", label: "História" },
-  { href: "#espetaculo", label: "Espetáculo ao Vivo" },
+  { href: "#producao", label: "Produção ao Vivo" },
   { href: "#loja", label: "Loja" },
   { href: "#visita", label: "Visite" },
 ];
@@ -37,11 +37,11 @@ export const Navbar = () => {
         <a href="#topo" className="flex items-center gap-3 group" data-testid="navbar-logo-link">
           <Logo className="w-9 h-9 transition-transform duration-500 group-hover:rotate-6" />
           <div className="leading-tight">
-            <span className="block font-serif text-lg text-stone-100 tracking-wide">
-              Museu do Cristal
+            <span className="block font-serif text-lg text-stone-100 tracking-[0.12em] uppercase">
+              Glas Park
             </span>
             <span className="block text-[10px] font-mono uppercase tracking-[0.3em] text-amber-500/80">
-              Blumenau · Desde 1995
+              Museu do Cristal · Blumenau
             </span>
           </div>
         </a>

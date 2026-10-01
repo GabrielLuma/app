@@ -30,6 +30,10 @@ Site institucional para divulgar um museu de cristal em Blumenau (SC). Atendimen
 - Footer completo; favicon SVG; responsivo (375/768/1366 verificado)
 - Fotos reais da loja (8) substituindo imagens de exemplo — galeria masonry otimizada (~350 KB/foto) (2026-10-01)
 - Fotos reais do museu: corredor de exposição na História + nova faixa "Peças do acervo" com 3 fotos de peças (fundo branco removido e recomposto em fundo escuro com brilho âmbar) (2026-10-01)
+- Rebrand para GLAS PARK (navbar, footer, título da aba, hero e texto da História); frase do hero: "Onde a areia e o fogo se transformam em obra de arte."; seção renomeada de "Espetáculo ao Vivo" para "Produção ao Vivo" (id #producao) (2026-10-01)
+
+## Pendente
+- 6 fotos reais da produção (enviadas em chat mas não registradas como arquivo — aguardando reenvio): hero deve usar a foto do homem soprando cristal (salvar como /images/hero-soprador.jpg) e as 6 vão para a grade da seção Produção ao Vivo (/images/producao/prod-1..6.jpg, com bordas brancas recortadas); remover os fallbacks Unsplash em Hero.jsx (HERO_IMG) e Espetaculo.jsx (SHOTS)
 
 ## Backlog
 - P0: nenhum pendente

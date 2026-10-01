@@ -4,12 +4,12 @@ import { ArrowDown } from "lucide-react";
 import { WhatsAppIcon, WHATSAPP_LINK, getMuseumStatus } from "./shared";
 
 const HERO_IMG =
-  "https://images.unsplash.com/photo-1597361304971-f9cfd6e154c7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzN8MHwxfHNlYXJjaHwxfHxnbGFzc2Jsb3dpbmclMjBtb2x0ZW4lMjBnbGFzcyUyMGZ1cm5hY2UlMjBhcnRpc2FufGVufDB8fHx8MTc9MDg3MTc4MXww&ixlib=rb-4.1.0&q=85";
+  "https://images.unsplash.com/photo-1597361304971-f9cfd6e154c7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzN8MHwxfHNlYXJjaHwxfHxnbGFzc2Jsb3dpbmclMjBtb2x0ZW4lMjBnbGFzcyUyMGZ1cm5hY2UlMjBhcnRpc2FufGVufDB8fHx8MTc5MDg3MTc4MXww&ixlib=rb-4.1.0&q=85";
 
 const LINES = [
-  { text: "Onde o fogo", italic: false },
-  { text: "se torna", italic: true },
-  { text: "cristal.", italic: false },
+  { text: "Onde a areia e o fogo", italic: false },
+  { text: "se transformam em", italic: true },
+  { text: "obra de arte.", italic: false },
 ];
 
 const StatusBadge = () => {
@@ -97,9 +97,9 @@ export const Hero = () => {
           transition={{ delay: 1, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
           className="mt-8 max-w-xl text-base sm:text-lg text-stone-300 leading-relaxed"
         >
-          Desde 1995, um espaço criativo em Blumenau onde você conhece a arte, a
-          história e a beleza do cristal — com espetáculo ao vivo dos mestres
-          vidreiros e entrada gratuita.
+          Desde 1995, o Glas Park é um espaço criativo em Blumenau onde você
+          conhece a arte, a história e a beleza do cristal — com produção ao
+          vivo dos mestres vidreiros e entrada gratuita.
         </motion.p>
 
         <motion.div

@@ -9,9 +9,9 @@ export const Footer = () => (
           <div className="flex items-center gap-3">
             <Logo className="w-10 h-10" />
             <div className="leading-tight">
-              <span className="block font-serif text-xl text-stone-100">Museu do Cristal</span>
+              <span className="block font-serif text-xl text-stone-100 tracking-[0.12em] uppercase">Glas Park</span>
               <span className="block text-[10px] font-mono uppercase tracking-[0.3em] text-amber-500/80">
-                Cristais di Murano · Blumenau
+                Museu do Cristal · Blumenau
               </span>
             </div>
           </div>
@@ -67,7 +67,7 @@ export const Footer = () => (
 
       <div className="mt-14 pt-8 border-t border-amber-500/10 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-xs text-stone-500">
-          © {new Date().getFullYear()} Museu do Cristal · Blumenau. Todos os direitos reservados.
+          © {new Date().getFullYear()} Glas Park · Museu do Cristal — Blumenau. Todos os direitos reservados.
         </p>
         <p className="text-xs font-mono uppercase tracking-[0.2em] text-stone-600">
           Arte · Fogo · Cristal

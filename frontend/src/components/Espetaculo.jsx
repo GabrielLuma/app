@@ -3,26 +3,23 @@ import { Reveal, Eyebrow, WhatsAppIcon, WHATSAPP_AGENDAMENTO_LINK } from "./shar
 
 const SHOTS = [
   {
-    url: "https://images.unsplash.com/photo-1630691625890-6cf7c4f30c04?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzN8MHwxfHNlYXJjaHwzfHxnbGFzc2Jsb3dpbmclMjBtb2x0ZW4lMjBnbGFzcyUyMGZ1cm5hY2UlMjBhcnRpc2FufGVufDB8fHx8MTc9MDg3MTc4MXww&ixlib=rb-4.1.0&q=85",
-    title: "A Fornalha",
-    desc: "Vidro fundido em temperatura extrema, junto ao forno de fusão",
-    tall: true,
+    src: "https://images.unsplash.com/photo-1630691625890-6cf7c4f30c04?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzN8MHwxfHNlYXJjaHwzfHxnbGFzc2Jsb3dpbmclMjBtb2x0ZW4lMjBnbGFzcyUyMGZ1cm5hY2UlMjBhcnRpc2FufGVufDB8fHx8MTc5MDg3MTc4MXww&ixlib=rb-4.1.0&q=85",
+    alt: "Vidro fundido junto ao forno de fusão",
+    wide: true,
   },
   {
-    url: "https://images.unsplash.com/photo-1671214448723-5ffd8157be62?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzN8MHwxfHNlYXJjaHw0fHxnbGFzc2Jsb3dpbmclMjBtb2x0ZW4lMjBnbGFzcyUyMGZ1cm5hY2UlMjBhcnRpc2FufGVufDB8fHx8MTc5MDg3MTc4MXww&ixlib=rb-4.1.0&q=85",
-    title: "Sopro & Movimento",
-    desc: "Modelagem artesanal da peça incandescente",
+    src: "https://images.unsplash.com/photo-1671214448723-5ffd8157be62?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzN8MHwxfHNlYXJjaHw0fHxnbGFzc2Jsb3dpbmclMjBtb2x0ZW4lMjBnbGFzcyUyMGZ1cm5hY2UlMjBhcnRpc2FufGVufDB8fHx8MTc5MDg3MTc4MXww&ixlib=rb-4.1.0&q=85",
+    alt: "Modelagem artesanal da peça incandescente",
   },
   {
-    url: "https://images.unsplash.com/photo-1506902039157-1a7e7374b077?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzN8MHwxfHNlYXJjaHwyfHxnbGFzc2Jsb3dpbmclMjBtb2x0ZW4lMjBnbGFzcyUyMGZ1cm5hY2UlMjBhcnRpc2FufGVufDB8fHx8MTc9MDg3MTc4MXww&ixlib=rb-4.1.0&q=85",
-    title: "Lapidação Térmica",
-    desc: "Ajuste fino de chama para o acabamento reluzente",
+    src: "https://images.unsplash.com/photo-1506902039157-1a7e7374b077?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzN8MHwxfHNlYXJjaHwyfHxnbGFzc2Jsb3dpbmclMjBtb2x0ZW4lMjBnbGFzcyUyMGZ1cm5hY2UlMjBhcnRpc2FufGVufDB8fHx8MTc5MDg3MTc4MXww&ixlib=rb-4.1.0&q=85",
+    alt: "Ajuste fino de chama para acabamento",
   },
 ];
 
 export const Espetaculo = () => (
   <section
-    id="espetaculo"
+    id="producao"
     className="relative py-28 lg:py-40 bg-[#121218] border-y border-amber-500/10 overflow-hidden"
     data-testid="espetaculo-section"
   >
@@ -30,7 +27,7 @@ export const Espetaculo = () => (
     <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
       <div className="max-w-2xl">
         <Reveal>
-          <Eyebrow>Espetáculo ao vivo</Eyebrow>
+          <Eyebrow>Produção ao vivo</Eyebrow>
         </Reveal>
         <Reveal delay={0.1}>
           <h2 className="mt-5 font-serif font-light text-3xl sm:text-4xl lg:text-5xl text-stone-100 tracking-tight leading-tight">
@@ -84,26 +81,21 @@ export const Espetaculo = () => (
         </Reveal>
       </div>
 
-      <div className="mt-16 lg:mt-20 grid md:grid-cols-3 gap-5">
+      <div className="mt-16 lg:mt-20 grid sm:grid-cols-2 lg:grid-cols-3 gap-5" data-testid="producao-gallery">
         {SHOTS.map((shot, i) => (
-          <Reveal key={shot.title} delay={0.1 + i * 0.12} className={shot.tall ? "md:row-span-2" : ""}>
+          <Reveal key={shot.src} delay={0.08 + i * 0.08} className={shot.wide ? "sm:col-span-2" : ""}>
             <figure
-              className={`group relative overflow-hidden rounded-2xl border border-amber-500/20 h-full ${
-                shot.tall ? "min-h-[420px] md:min-h-full" : "min-h-[260px]"
-              }`}
-              data-testid={`espetaculo-shot-${i}`}
+              className="group relative overflow-hidden rounded-2xl border border-amber-500/20 h-full"
+              data-testid={`producao-shot-${i}`}
             >
               <img
-                src={shot.url}
-                alt={shot.title}
+                src={shot.src}
+                alt={shot.alt}
                 loading="lazy"
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                className={`w-full object-cover transition-transform duration-700 group-hover:scale-105 ${
+                  shot.wide ? "aspect-[2/1] sm:aspect-auto sm:h-full" : "aspect-[4/3]"
+                }`}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0B0B0E]/90 via-transparent to-transparent" />
-              <figcaption className="absolute bottom-0 inset-x-0 p-6">
-                <p className="font-serif text-xl text-stone-100">{shot.title}</p>
-                <p className="mt-1 text-sm text-stone-400">{shot.desc}</p>
-              </figcaption>
             </figure>
           </Reveal>
         ))}
