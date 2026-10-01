@@ -1,20 +1,30 @@
 import { Reveal, Eyebrow } from "./shared";
 
-const IMGS = [
-  {
-    url: "https://images.unsplash.com/photo-1776663772031-bc08915613d7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHxjb2xvcmZ1bCUyMGdsYXNzJTIwc2N1bHB0dXJlJTIwYXJ0JTIwZGFya3xlbnwwfHx8fDE3OTA4NzE3OTJ8MA&ixlib=rb-4.1.0&q=85",
-    alt: "Escultura iridescente de vidro colorido",
-  },
-  {
-    url: "https://images.unsplash.com/photo-1637324110774-cebee794246c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHw0fHxjb2xvcmZ1bCUyMGdsYXNzJTIwc2N1bHB0dXJlJTIwYXJ0JTIwZGFya3xlbnwwfHx8fDE3OTA4NzE3OTJ8MA&ixlib=rb-4.1.0&q=85",
-    alt: "Escultura fluida de vidro âmbar em fundo escuro",
-  },
-];
-
 const STATS = [
   { value: "1995", label: "Ano de fundação" },
   { value: "2.000+", label: "Anos de história do vidro" },
   { value: "100%", label: "Entrada gratuita" },
+];
+
+const ACERVO = [
+  {
+    src: "/images/museu-tacas-ouro.jpg",
+    alt: "Taças de cristal ornamentadas com aplicações em ouro",
+    title: "Taças Ornamentadas a Ouro",
+    desc: "Cristal rubi com medalhões e folhagens em ouro",
+  },
+  {
+    src: "/images/museu-canecas-lagarto.jpg",
+    alt: "Canecas de cristal com lagartos modelados à mão",
+    title: "Canecas com Lagartos",
+    desc: "Aplicações modeladas à mão, esmaltadas e douradas",
+  },
+  {
+    src: "/images/museu-canecas-estanho.jpg",
+    alt: "Canecas de cristal gravadas com tampas de estanho",
+    title: "Canecas com Tampa de Estanho",
+    desc: "Gravação heráldica e ferragens em estanho maciço",
+  },
 ];
 
 export const Historia = () => (
@@ -62,29 +72,72 @@ export const Historia = () => (
         </div>
 
         <div className="relative">
-          <div className="grid grid-cols-2 gap-5">
-            <Reveal delay={0.15} className="mt-12">
+          <div className="space-y-5">
+            <Reveal delay={0.15}>
               <div className="overflow-hidden rounded-2xl border border-amber-500/20 shadow-[0_20px_60px_rgba(0,0,0,0.5)] group">
                 <img
-                  src={IMGS[0].url}
-                  alt={IMGS[0].alt}
+                  src="/images/museu-corredor.jpg"
+                  alt="Corredor de exposição do Museu do Cristal com vitrines iluminadas"
                   loading="lazy"
-                  className="w-full aspect-[3/4] object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
+                  data-testid="historia-museum-photo"
                 />
               </div>
             </Reveal>
             <Reveal delay={0.3}>
               <div className="overflow-hidden rounded-2xl border border-amber-500/20 shadow-[0_20px_60px_rgba(0,0,0,0.5)] group">
                 <img
-                  src={IMGS[1].url}
-                  alt={IMGS[1].alt}
+                  src="/images/museu-tacas-ouro.jpg"
+                  alt="Taças de cristal ornamentadas com aplicações em ouro"
                   loading="lazy"
-                  className="w-full aspect-[3/4] object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105"
+                  data-testid="historia-goblets-photo"
                 />
               </div>
             </Reveal>
           </div>
           <div className="absolute -inset-10 furnace-glow -z-10" />
+        </div>
+      </div>
+
+      <div className="mt-24 lg:mt-32">
+        <Reveal>
+          <div className="flex items-end justify-between gap-6 flex-wrap">
+            <div>
+              <Eyebrow>Peças do acervo</Eyebrow>
+              <h3 className="mt-4 font-serif font-light text-2xl sm:text-3xl text-stone-100 tracking-tight">
+                Detalhes que contam <span className="italic text-amber-400">histórias</span>
+              </h3>
+            </div>
+            <p className="max-w-sm text-sm text-stone-500 leading-relaxed">
+              Cada vitrine guarda peças que atravessaram séculos de técnica,
+              fogo e imaginação.
+            </p>
+          </div>
+        </Reveal>
+
+        <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {ACERVO.map((p, i) => (
+            <Reveal key={p.title} delay={0.1 + i * 0.12}>
+              <figure
+                className="group rounded-2xl overflow-hidden border border-amber-500/15 bg-[#16161E] hover:border-amber-500/40 transition-colors duration-500"
+                data-testid={`acervo-card-${i}`}
+              >
+                <div className="overflow-hidden">
+                  <img
+                    src={p.src}
+                    alt={p.alt}
+                    loading="lazy"
+                    className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                </div>
+                <figcaption className="p-6">
+                  <p className="font-serif text-xl text-stone-100">{p.title}</p>
+                  <p className="mt-1.5 text-sm text-stone-400">{p.desc}</p>
+                </figcaption>
+              </figure>
+            </Reveal>
+          ))}
         </div>
       </div>
     </div>

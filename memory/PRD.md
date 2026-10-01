@@ -28,6 +28,8 @@ Site institucional para divulgar um museu de cristal em Blumenau (SC). Atendimen
 - Loja com abas (Todas/Taças/Copos/Decorativos) e animação de filtro
 - Seção Visite: horários, endereço, rota no Google Maps, CTA WhatsApp + botão flutuante
 - Footer completo; favicon SVG; responsivo (375/768/1366 verificado)
+- Fotos reais da loja (8) substituindo imagens de exemplo — galeria masonry otimizada (~350 KB/foto) (2026-10-01)
+- Fotos reais do museu: corredor de exposição na História + nova faixa "Peças do acervo" com 3 fotos de peças (fundo branco removido e recomposto em fundo escuro com brilho âmbar) (2026-10-01)
 
 ## Backlog
 - P0: nenhum pendente
