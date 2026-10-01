@@ -1,11 +1,6 @@
 import { Reveal, Eyebrow } from "./shared";
 import { openLightbox } from "./Lightbox";
 
-const STATS = [
-  { value: "1995", label: "Ano de fundação" },
-  { value: "100%", label: "Entrada gratuita" },
-];
-
 const ACERVO = [
   {
     src: "/images/acervo-japamala.jpg",
@@ -34,7 +29,7 @@ export const Historia = () => (
       <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
         <div>
           <Reveal>
-            <Eyebrow>A nossa história</Eyebrow>
+            <Eyebrow>O museu</Eyebrow>
           </Reveal>
           <Reveal delay={0.1}>
             <h2 className="mt-5 font-serif font-light text-3xl sm:text-4xl lg:text-5xl text-stone-100 tracking-tight leading-tight">
@@ -57,18 +52,6 @@ export const Historia = () => (
             </p>
           </Reveal>
 
-          <div className="mt-12 grid grid-cols-2 gap-6">
-            {STATS.map((s, i) => (
-              <Reveal key={s.label} delay={0.35 + i * 0.1}>
-                <div data-testid={`historia-stat-${i}`}>
-                  <p className="font-serif text-3xl sm:text-4xl text-amber-400">{s.value}</p>
-                  <p className="mt-2 text-xs font-mono uppercase tracking-[0.18em] text-stone-500">
-                    {s.label}
-                  </p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
         </div>
 
         <div className="relative">

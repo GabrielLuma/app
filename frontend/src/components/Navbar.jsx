@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 import { WhatsAppIcon, WHATSAPP_LINK } from "./shared";
 
 const LINKS = [
-  { href: "#historia", label: "História" },
+  { href: "#historia", label: "Museu" },
   { href: "#producao", label: "Produção ao Vivo" },
   { href: "#loja", label: "Loja" },
   { href: "#visita", label: "Visite" },

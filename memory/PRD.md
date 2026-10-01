@@ -52,6 +52,7 @@ Site institucional para divulgar um museu de cristal em Blumenau (SC). Atendimen
 - Hero: foto principal trocada pelo close do vidro vermelho incandescente sendo trabalhado (/images/hero-fogo.jpg, bordas brancas removidas); título da loja: "Leve a arte com você"; mapa do Google embutido na seção Visite; cartões do acervo com altura uniforme (2026-10-01)
 - Loja: adicionadas 2 fotos novas (prateleiras de cristal transparente — _DSC5077/_DSC5078) — galeria com 9 fotos; rodapé de visitação no modelo Museu e Loja / Fabricação ao vivo / Entrada gratuita; acervo card 0 = "Colar da Sorte · China" (2026-10-01)
 - Logo original Glas Park (imagem enviada pelo cliente, fundo branco removido e colorizada em tom claro) aplicado na navbar, rodapé e favicon (/images/logo-glaspark.png, /favicon.png); removidas menções a "2.000 anos"; hero ganhou o texto "Visite a fábrica..." em destaque sob o título (2026-10-01)
+- Seção História → "Museu" (menu e selo da seção); removidos os destaques numéricos (ano de fundação e entrada gratuita) da seção; texto "Fundado em 1995..." mantido no parágrafo (2026-10-01)
 
 ## Backlog
 - P0: nenhum pendente
