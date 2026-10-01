@@ -94,10 +94,13 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.1, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-4 max-w-xl text-sm text-stone-400 leading-relaxed"
+          className="mt-6 flex items-center gap-4 max-w-xl"
         >
-          Desde 1995 em Blumenau — produção ao vivo dos mestres vidreiros e
-          entrada gratuita.
+          <span className="h-px w-10 bg-gradient-to-r from-amber-500 to-transparent shrink-0" />
+          <span className="font-serif italic text-xl sm:text-2xl text-amber-300 leading-snug [text-shadow:0_0_24px_rgba(226,135,67,0.35)]">
+            Desde 1995 em Blumenau — produção ao vivo dos mestres vidreiros e
+            entrada gratuita.
+          </span>
         </motion.p>
 
         <motion.div

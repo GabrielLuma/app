@@ -33,12 +33,12 @@ export const Navbar = () => {
       }`}
       data-testid="main-navbar"
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 h-24 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
         <a href="#topo" className="flex items-center group" data-testid="navbar-logo-link">
           <img
             src="/images/logo-glaspark.png"
             alt="Glas Park — Museu do Cristal"
-            className="h-20 w-auto transition-transform duration-500 group-hover:scale-105 [filter:drop-shadow(0_0_14px_rgba(255,255,255,0.3))]"
+            className="h-11 w-auto transition-transform duration-500 group-hover:scale-105 [filter:drop-shadow(0_0_10px_rgba(255,255,255,0.25))]"
           />
         </a>
 
