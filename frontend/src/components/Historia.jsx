@@ -77,8 +77,8 @@ export const Historia = () => (
             <Reveal delay={0.15}>
               <div className="overflow-hidden rounded-2xl border border-amber-500/20 shadow-[0_20px_60px_rgba(0,0,0,0.5)] group">
                 <img
-                  src="/images/museu-corredor.jpg"
-                  alt="Corredor de exposição do Museu do Cristal com vitrines iluminadas"
+                  src="/images/historia-livro.jpg"
+                  alt="Livro antigo L'Arte Vetraria, de 1668, aberto sobre mesa de madeira"
                   loading="lazy"
                   className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
                   data-testid="historia-museum-photo"
