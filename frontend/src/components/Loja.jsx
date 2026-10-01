@@ -1,4 +1,5 @@
 import { Reveal, Eyebrow, WhatsAppIcon, WHATSAPP_LINK } from "./shared";
+import { openLightbox } from "./Lightbox";
 
 const PHOTOS = [
   { src: "/images/loja/loja-6.jpg", alt: "Prateleiras com vasos de cristal coloridos" },
@@ -55,7 +56,8 @@ export const Loja = () => (
                 src={p.src}
                 alt={p.alt}
                 loading="lazy"
-                className="w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                onClick={() => openLightbox(p.src, p.alt)}
+                className="w-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-105"
               />
             </figure>
           </Reveal>

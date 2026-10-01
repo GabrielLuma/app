@@ -1,4 +1,4 @@
-import { Clock, MapPin, Ticket, ExternalLink } from "lucide-react";
+import { Clock, MapPin, Ticket, ExternalLink, Flame } from "lucide-react";
 import { Reveal, Eyebrow, WhatsAppIcon, WHATSAPP_LINK, MAPS_LINK } from "./shared";
 
 const HOURS = [
@@ -45,6 +45,9 @@ export const Visita = () => (
               <Clock className="w-5 h-5 text-amber-500" />
               <h3 className="font-serif text-2xl text-stone-100">Horários</h3>
             </div>
+            <p className="mt-2 text-xs font-mono uppercase tracking-[0.22em] text-stone-500">
+              Visitação ao museu e loja
+            </p>
             <ul className="mt-7 space-y-5">
               {HOURS.map((h) => (
                 <li
@@ -58,10 +61,28 @@ export const Visita = () => (
                 </li>
               ))}
             </ul>
-            <p className="mt-6 text-xs text-stone-500 leading-relaxed">
-              Produção de cristal ao vivo: seg a sex, 9h às 13h30. Sábado, sob
-              consulta de disponibilidade.
-            </p>
+            <div className="mt-7 border-t border-amber-500/15 pt-6">
+              <p className="text-xs font-mono uppercase tracking-[0.22em] text-stone-500 mb-3">
+                Já a fabricação tem outro horário
+              </p>
+              <div
+                className="rounded-xl border border-amber-500/50 bg-amber-500/10 p-5 shadow-[0_0_36px_rgba(226,135,67,0.18)]"
+                data-testid="visita-production-highlight"
+              >
+                <div className="flex items-center gap-2.5">
+                  <Flame className="w-5 h-5 text-amber-400" />
+                  <p className="text-xs font-mono uppercase tracking-[0.22em] text-amber-400">
+                    Produção ao vivo · Fábrica
+                  </p>
+                </div>
+                <p className="mt-3 font-serif text-2xl text-amber-300">
+                  Seg a Sex · 9h às 13h30
+                </p>
+                <p className="mt-1.5 text-sm text-stone-400">
+                  Sábado, sob consulta de disponibilidade.
+                </p>
+              </div>
+            </div>
           </div>
         </Reveal>
 

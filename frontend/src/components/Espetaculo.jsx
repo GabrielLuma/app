@@ -1,6 +1,6 @@
 import { Flame, CalendarClock } from "lucide-react";
 import { Reveal, Eyebrow, WhatsAppIcon, WHATSAPP_AGENDAMENTO_LINK } from "./shared";
-import { ProductionTimer } from "./ProductionTimer";
+import { openLightbox } from "./Lightbox";
 
 const SHOTS = [
   {
@@ -69,9 +69,6 @@ export const Espetaculo = () => (
           </div>
         </Reveal>
         <Reveal delay={0.4}>
-          <ProductionTimer />
-        </Reveal>
-        <Reveal delay={0.5}>
           <a
             href={WHATSAPP_AGENDAMENTO_LINK}
             target="_blank"
@@ -96,7 +93,8 @@ export const Espetaculo = () => (
                 src={shot.src}
                 alt={shot.alt}
                 loading="lazy"
-                className={`w-full object-cover transition-transform duration-700 group-hover:scale-105 ${
+                onClick={() => openLightbox(shot.src, shot.alt)}
+                className={`w-full object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-105 ${
                   shot.wide ? "aspect-[2/1] sm:aspect-auto sm:h-full" : "aspect-[4/3]"
                 }`}
               />

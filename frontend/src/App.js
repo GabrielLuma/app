@@ -8,6 +8,7 @@ import { Espetaculo } from "@/components/Espetaculo";
 import { Loja } from "@/components/Loja";
 import { Visita } from "@/components/Visita";
 import { Footer } from "@/components/Footer";
+import { Lightbox } from "@/components/Lightbox";
 import { WhatsAppIcon, WHATSAPP_LINK } from "@/components/shared";
 import { motion } from "framer-motion";
 
@@ -51,6 +52,7 @@ function App() {
         <Visita />
       </main>
       <Footer />
+      <Lightbox />
 
       <motion.a
         href={WHATSAPP_LINK}

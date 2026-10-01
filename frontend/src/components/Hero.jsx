@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowDown } from "lucide-react";
-import { WhatsAppIcon, WHATSAPP_LINK, getMuseumStatus } from "./shared";
+import { WhatsAppIcon, WHATSAPP_LINK } from "./shared";
 
 const HERO_IMG = "/images/hero-soprador.jpg";
 
@@ -10,28 +10,6 @@ const LINES = [
   { text: "se transformam em", italic: true },
   { text: "obra de arte.", italic: false },
 ];
-
-const StatusBadge = () => {
-  const status = getMuseumStatus();
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: -12 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 1.1, duration: 0.7 }}
-      data-testid="museum-status-badge"
-      className="inline-flex items-center gap-2.5 rounded-full backdrop-blur-xl bg-black/50 border border-amber-500/25 px-4 py-2"
-    >
-      <span
-        className={`w-2 h-2 rounded-full ${
-          status.key === "closed" ? "bg-stone-500" : "bg-amber-500 animate-ember"
-        }`}
-      />
-      <span className="text-xs font-mono uppercase tracking-[0.2em] text-amber-100/90">
-        {status.label}
-      </span>
-    </motion.div>
-  );
-};
 
 export const Hero = () => {
   const ref = useRef(null);
@@ -64,8 +42,6 @@ export const Hero = () => {
         style={{ opacity: fade }}
         className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 pb-24 pt-44 w-full"
       >
-        <StatusBadge />
-
         <h1
           className="mt-8 font-serif font-light text-stone-100 leading-[0.98] tracking-tight text-5xl sm:text-6xl lg:text-8xl"
           data-testid="hero-title"

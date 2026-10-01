@@ -1,4 +1,5 @@
 import { Reveal, Eyebrow } from "./shared";
+import { openLightbox } from "./Lightbox";
 
 const STATS = [
   { value: "1995", label: "Ano de fundação" },
@@ -23,8 +24,8 @@ const ACERVO = [
   {
     src: "/images/acervo-tacas-ouro.jpg",
     alt: "Taças de cristal rubi ornamentadas com cenas douradas",
-    title: "Taças Ornamentadas a Ouro",
-    desc: "Cristal rubi com medalhões e folhagens em ouro",
+    title: "1995 · Trabalho de Emil Rimpler",
+    desc: "Zwiesel/Alemanha — Lapidação e gravura. Overlay de cristal rubi com camada de ouro",
   },
 ];
 
@@ -80,7 +81,13 @@ export const Historia = () => (
                   src="/images/museu-corredor.jpg"
                   alt="Corredor de exposição do Museu do Cristal com vitrines iluminadas"
                   loading="lazy"
-                  className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
+                  onClick={() =>
+                    openLightbox(
+                      "/images/museu-corredor.jpg",
+                      "Corredor de exposição do Museu do Cristal com vitrines iluminadas"
+                    )
+                  }
+                  className="w-full aspect-[4/3] object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-105"
                   data-testid="historia-museum-photo"
                 />
               </div>
@@ -91,7 +98,13 @@ export const Historia = () => (
                   src="/images/historia-livro.jpg"
                   alt="Livro antigo L'Arte Vetraria, de 1668, aberto sobre mesa de madeira"
                   loading="lazy"
-                  className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105"
+                  onClick={() =>
+                    openLightbox(
+                      "/images/historia-livro.jpg",
+                      "Livro antigo L'Arte Vetraria, de 1668, aberto sobre mesa de madeira"
+                    )
+                  }
+                  className="w-full aspect-[3/2] object-cover cursor-zoom-in transition-transform duration-700 group-hover:scale-105"
                   data-testid="historia-goblets-photo"
                 />
               </div>
@@ -129,7 +142,8 @@ export const Historia = () => (
                     src={p.src}
                     alt={p.alt}
                     loading="lazy"
-                    className={`w-full aspect-[4/3] transition-transform duration-700 group-hover:scale-105 ${
+                    onClick={() => openLightbox(p.src, p.alt)}
+                    className={`w-full aspect-[4/3] cursor-zoom-in transition-transform duration-700 group-hover:scale-105 ${
                       p.fit === "contain" ? "object-contain bg-white" : "object-cover"
                     }`}
                   />
