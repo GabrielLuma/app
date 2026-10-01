@@ -17,8 +17,8 @@ const ACERVO = [
   {
     src: "/images/acervo-canecas-lagarto.jpg",
     alt: "Canecas de cristal com lagartos modelados à mão",
-    title: "Canecas com Lagartos",
-    desc: "Aplicações modeladas à mão, esmaltadas e douradas",
+    title: "1880 · Boêmia/República Tcheca",
+    desc: "Canecos de vidro opalino com pintura esmalte e ouro",
   },
   {
     src: "/images/acervo-tacas-ouro.jpg",
