@@ -8,7 +8,9 @@ const PHOTOS = [
   { src: "/images/loja/loja-4.jpg", alt: "Salão da loja com prateleiras de cristais coloridos" },
   { src: "/images/loja/loja-7.jpg", alt: "Prateleiras com vasos de cristal em tons escuros" },
   { src: "/images/loja/loja-3.jpg", alt: "Vasos de cristal em exposição na loja" },
+  { src: "/images/loja/loja-9.jpg", alt: "Prateleiras com taças e copos de cristal transparente" },
   { src: "/images/loja/loja-5.jpg", alt: "Parede de prateleiras iluminadas com cristais" },
+  { src: "/images/loja/loja-10.jpg", alt: "Estantes com cristais transparentes e vasos decorativos" },
 ];
 
 export const Loja = () => (
