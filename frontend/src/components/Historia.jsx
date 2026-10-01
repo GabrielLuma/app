@@ -8,11 +8,10 @@ const STATS = [
 
 const ACERVO = [
   {
-    src: "/images/acervo-japamala.jpg",
-    alt: "Japamala de contas de cristal pintadas à mão com apliques dourados",
-    title: "Japamala de Cristal Pintado",
-    desc: "Contas de cristal pintadas à mão, uma a uma, com apliques em ouro",
-    fit: "contain",
+    src: "/images/museu-corredor.jpg",
+    alt: "Corredor de exposição do Museu do Cristal com vitrines iluminadas",
+    title: "Corredor de Exposição",
+    desc: "Vitrines iluminadas guardando séculos de história do cristal",
   },
   {
     src: "/images/acervo-canecas-lagarto.jpg",
@@ -77,10 +76,10 @@ export const Historia = () => (
             <Reveal delay={0.15}>
               <div className="overflow-hidden rounded-2xl border border-amber-500/20 shadow-[0_20px_60px_rgba(0,0,0,0.5)] group">
                 <img
-                  src="/images/museu-corredor.jpg"
-                  alt="Corredor de exposição do Museu do Cristal com vitrines iluminadas"
+                  src="/images/acervo-japamala.jpg"
+                  alt="Japamala de contas de cristal pintadas à mão com apliques dourados"
                   loading="lazy"
-                  className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full aspect-[4/3] object-contain bg-white transition-transform duration-700 group-hover:scale-105"
                   data-testid="historia-museum-photo"
                 />
               </div>
