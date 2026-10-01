@@ -88,8 +88,8 @@ export const Historia = () => (
             <Reveal delay={0.3}>
               <div className="overflow-hidden rounded-2xl border border-amber-500/20 shadow-[0_20px_60px_rgba(0,0,0,0.5)] group">
                 <img
-                  src="/images/acervo-tacas-ouro.jpg"
-                  alt="Taças de cristal ornamentadas com aplicações em ouro"
+                  src="/images/historia-livro.jpg"
+                  alt="Livro antigo L'Arte Vetraria, de 1668, aberto sobre mesa de madeira"
                   loading="lazy"
                   className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105"
                   data-testid="historia-goblets-photo"
