@@ -8,7 +8,7 @@ const HERO_IMG = "/images/hero-fogo.jpg";
 const LINES = [
   { text: "Onde a areia e o fogo", italic: false },
   { text: "se transformam em", italic: true },
-  { text: "obra de artes.", italic: false },
+  { text: "obras de arte.", italic: false },
 ];
 
 export const Hero = () => {
