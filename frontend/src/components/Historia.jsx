@@ -8,19 +8,19 @@ const STATS = [
 
 const ACERVO = [
   {
-    src: "/images/museu-tacas-ouro.jpg",
+    src: "/images/acervo-tacas-ouro.jpg",
     alt: "Taças de cristal ornamentadas com aplicações em ouro",
     title: "Taças Ornamentadas a Ouro",
     desc: "Cristal rubi com medalhões e folhagens em ouro",
   },
   {
-    src: "/images/museu-canecas-lagarto.jpg",
+    src: "/images/acervo-canecas-lagarto.jpg",
     alt: "Canecas de cristal com lagartos modelados à mão",
     title: "Canecas com Lagartos",
     desc: "Aplicações modeladas à mão, esmaltadas e douradas",
   },
   {
-    src: "/images/museu-canecas-estanho.jpg",
+    src: "/images/acervo-canecas-estanho.jpg",
     alt: "Canecas de cristal gravadas com tampas de estanho",
     title: "Canecas com Tampa de Estanho",
     desc: "Gravação heráldica e ferragens em estanho maciço",
@@ -87,7 +87,7 @@ export const Historia = () => (
             <Reveal delay={0.3}>
               <div className="overflow-hidden rounded-2xl border border-amber-500/20 shadow-[0_20px_60px_rgba(0,0,0,0.5)] group">
                 <img
-                  src="/images/museu-tacas-ouro.jpg"
+                  src="/images/acervo-tacas-ouro.jpg"
                   alt="Taças de cristal ornamentadas com aplicações em ouro"
                   loading="lazy"
                   className="w-full aspect-[3/2] object-cover transition-transform duration-700 group-hover:scale-105"

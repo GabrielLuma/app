@@ -6,10 +6,10 @@ const pad = (n) => String(n).padStart(2, "0");
 function getProductionState(now) {
   const day = now.getDay();
   const h = now.getHours() + now.getMinutes() / 60 + now.getSeconds() / 3600;
-  const isLive = day >= 1 && day <= 5 && h >= 9 && h < 13;
+  const isLive = day >= 1 && day <= 5 && h >= 9 && h < 13.5;
   if (isLive) {
     const end = new Date(now);
-    end.setHours(13, 0, 0, 0);
+    end.setHours(13, 30, 0, 0);
     return { live: true, target: end };
   }
   for (let i = 0; i < 8; i++) {
@@ -78,7 +78,7 @@ export const ProductionTimer = () => {
       <p className="mt-5 text-center text-sm text-stone-400">
         {state.live ? (
           <>
-            Termina hoje às <span className="text-amber-300">13h</span> — corre que dá tempo de assistir
+            Termina hoje às <span className="text-amber-300">13h30</span> — corre que dá tempo de assistir
           </>
         ) : (
           <>

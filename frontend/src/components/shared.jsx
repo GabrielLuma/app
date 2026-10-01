@@ -4,7 +4,7 @@ export const WHATSAPP_LINK =
   "https://wa.me/5547992056444?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20Museu%20do%20Cristal%20e%20agendamento.";
 
 export const WHATSAPP_AGENDAMENTO_LINK =
-  "https://wa.me/5547992056444?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20a%20produ%C3%A7%C3%A3o%20de%20cristal%20ao%20vivo%20de%20s%C3%A1bado.";
+  "https://wa.me/5547992056444?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20a%20disponibilidade%20da%20produ%C3%A7%C3%A3o%20ao%20vivo%20aos%20s%C3%A1bados.";
 
 export const MAPS_LINK =
   "https://www.google.com/maps/search/?api=1&query=Rua+Rudolf+Roedel+233+Salto+Weissbach+Blumenau+SC";
@@ -50,7 +50,7 @@ export function getMuseumStatus() {
   const now = new Date();
   const day = now.getDay();
   const h = now.getHours() + now.getMinutes() / 60;
-  const live = day >= 1 && day <= 5 && h >= 9 && h < 13;
+  const live = day >= 1 && day <= 5 && h >= 9 && h < 13.5;
   const open =
     (day >= 1 && day <= 5 && h >= 9 && h < 18) || (day === 6 && h >= 9 && h < 13);
   if (live) return { key: "live", label: "Produção ao vivo acontecendo agora" };

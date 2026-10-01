@@ -1,7 +1,6 @@
 import { Reveal, Eyebrow, WhatsAppIcon, WHATSAPP_LINK } from "./shared";
 
 const PHOTOS = [
-  { src: "/images/loja/loja-1.jpg", alt: "Mesa de exposição com taças e peças de cristal" },
   { src: "/images/loja/loja-6.jpg", alt: "Prateleiras com vasos de cristal coloridos" },
   { src: "/images/loja/loja-2.jpg", alt: "Vasos e copos de cristal expostos na loja" },
   { src: "/images/loja/loja-8.jpg", alt: "Abajures e luminárias de cristal" },

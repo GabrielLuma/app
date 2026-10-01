@@ -28,7 +28,7 @@ export const Footer = () => (
           <ul className="mt-5 space-y-3 text-sm text-stone-400">
             <li>Seg a Sex · 9h às 18h</li>
             <li>Sábado · 9h às 13h</li>
-            <li>Produção ao vivo · Seg a Sex, 9h às 13h</li>
+            <li>Produção ao vivo · Seg a Sex, 9h às 13h30</li>
             <li className="text-amber-300/90">Entrada gratuita</li>
           </ul>
         </div>

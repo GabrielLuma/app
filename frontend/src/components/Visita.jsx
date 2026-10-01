@@ -59,8 +59,8 @@ export const Visita = () => (
               ))}
             </ul>
             <p className="mt-6 text-xs text-stone-500 leading-relaxed">
-              Produção de cristal ao vivo: seg a sex, 9h às 13h. Sábado, sob
-              agendamento prévio.
+              Produção de cristal ao vivo: seg a sex, 9h às 13h30. Sábado, sob
+              consulta de disponibilidade.
             </p>
           </div>
         </Reveal>

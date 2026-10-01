@@ -4,17 +4,17 @@ import { ProductionTimer } from "./ProductionTimer";
 
 const SHOTS = [
   {
-    src: "https://images.unsplash.com/photo-1630691625890-6cf7c4f30c04?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzN8MHwxfHNlYXJjaHwzfHxnbGFzc2Jsb3dpbmclMjBtb2x0ZW4lMjBnbGFzcyUyMGZ1cm5hY2UlMjBhcnRpc2FufGVufDB8fHx8MTc5MDg3MTc4MXww&ixlib=rb-4.1.0&q=85",
-    alt: "Vidro fundido junto ao forno de fusão",
+    src: "/images/producao/prod-1.jpg",
+    alt: "Fornos da fábrica com fileiras de peças de cristal em produção",
     wide: true,
   },
   {
-    src: "https://images.unsplash.com/photo-1671214448723-5ffd8157be62?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzN8MHwxfHNlYXJjaHw0fHxnbGFzc2Jsb3dpbmclMjBtb2x0ZW4lMjBnbGFzcyUyMGZ1cm5hY2UlMjBhcnRpc2FufGVufDB8fHx8MTc5MDg3MTc4MXww&ixlib=rb-4.1.0&q=85",
-    alt: "Modelagem artesanal da peça incandescente",
+    src: "/images/producao/prod-2.jpg",
+    alt: "Mestre vidreiro soprando o cristal incandescente na fornalha",
   },
   {
-    src: "https://images.unsplash.com/photo-1506902039157-1a7e7374b077?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzN8MHwxfHNlYXJjaHwyfHxnbGFzc2Jsb3dpbmclMjBtb2x0ZW4lMjBnbGFzcyUyMGZ1cm5hY2UlMjBhcnRpc2FufGVufDB8fHx8MTc5MDg3MTc4MXww&ixlib=rb-4.1.0&q=85",
-    alt: "Ajuste fino de chama para acabamento",
+    src: "/images/hero-soprador.jpg",
+    alt: "Mestre vidreiro modelando o cristal no cano de sopro",
   },
 ];
 
@@ -51,7 +51,7 @@ export const Espetaculo = () => (
               <Flame className="w-5 h-5 text-amber-500" />
               <div>
                 <p className="text-sm font-semibold text-stone-100">Segunda a Sexta</p>
-                <p className="text-xs font-mono text-amber-400/90 tracking-wider">9h às 13h</p>
+                <p className="text-xs font-mono text-amber-400/90 tracking-wider">9h às 13h30</p>
               </div>
             </div>
             <div
@@ -62,7 +62,7 @@ export const Espetaculo = () => (
               <div>
                 <p className="text-sm font-semibold text-stone-100">Sábado</p>
                 <p className="text-xs font-mono text-amber-400/90 tracking-wider">
-                  Sob agendamento prévio
+                  Sob consulta de disponibilidade
                 </p>
               </div>
             </div>
@@ -80,7 +80,7 @@ export const Espetaculo = () => (
             className="mt-9 inline-flex items-center gap-2.5 rounded-full bg-amber-500 hover:bg-amber-400 text-[#0B0B0E] font-semibold px-7 py-3.5 transition-all duration-300 hover:shadow-[0_0_40px_rgba(226,135,67,0.35)]"
           >
             <WhatsAppIcon className="w-5 h-5" />
-            Agendar apresentação de sábado
+            Consultar disponibilidade aos sábados
           </a>
         </Reveal>
       </div>

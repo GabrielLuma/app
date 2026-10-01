@@ -36,7 +36,14 @@ Site institucional para divulgar um museu de cristal em Blumenau (SC). Atendimen
 - Cronômetro da produção ao vivo na seção Produção (ProductionTimer.jsx): conta regressiva para a próxima sessão seg–sex 9h; quando ao vivo, mostra "termina em" até as 13h (2026-10-01)
 
 ## Pendente
-- 5 fotos reais da produção (enviadas em chat mas não registradas como arquivo — aguardando reenvio) para a grade da seção Produção ao Vivo (/images/producao/prod-1..6.jpg, com bordas brancas recortadas); remover os fallbacks Unsplash em Espetaculo.jsx (SHOTS)
+- (nenhum pendente no momento)
+
+## Atualizações recentes (2026-10-01)
+- Horário da produção ao vivo reajustado para 9h–13h30 (timer, selo do hero, chips, Visita e Footer)
+- CTA de sábado: "Consultar disponibilidade aos sábados" (texto + mensagem do WhatsApp)
+- Seção Produção ao Vivo agora usa 3 fotos reais (prod-1 fornos, prod-2 sopro, hero-soprador) com bordas brancas removidas
+- Acervo: fotos restauradas aos originais com fundo branco (sem edição)
+- Loja: fotos originais sem processamento; removida a foto da mesa dourada (repetida com a foto ampla do salão) — 7 fotos
 
 ## Backlog
 - P0: nenhum pendente
