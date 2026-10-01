@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import { WhatsAppIcon, WHATSAPP_LINK } from "./shared";
 
-const HERO_IMG = "/images/hero-soprador.jpg";
+const HERO_IMG = "/images/hero-fogo.jpg";
 
 const LINES = [
   { text: "Onde a areia e o fogo", italic: false },

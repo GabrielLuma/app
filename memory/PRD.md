@@ -49,6 +49,7 @@ Site institucional para divulgar um museu de cristal em Blumenau (SC). Atendimen
 - História: a segunda foto da coluna (taças a ouro) foi substituída pela foto do livro "L'Arte Vetraria" (1668) — coluna final: corredor do museu + livro antigo (2026-10-01)
 - Acervo: card "Canecas com Tampa de Estanho" substituído pela nova foto das taças ornamentadas a ouro (D Murano-9021 novo) — cards finais: Japamala, Canecas com Lagartos, Taças Ornamentadas a Ouro (2026-10-01)
 - Legendas do acervo atualizadas: "1880 · Boêmia/República Tcheca" (canecos opalinos) e "1995 · Trabalho de Emil Rimpler — Zwiesel/Alemanha" (taças); timer removido; selo "aberto agora" removido do hero; lightbox com zoom em todas as fotos; horário de produção destacado e separado do horário de visitação na seção Visite (2026-10-01)
+- Hero: foto principal trocada pelo close do vidro vermelho incandescente sendo trabalhado (/images/hero-fogo.jpg, bordas brancas removidas); título da loja: "Leve a arte com você"; mapa do Google embutido na seção Visite; cartões do acervo com altura uniforme (2026-10-01)
 
 ## Backlog
 - P0: nenhum pendente
